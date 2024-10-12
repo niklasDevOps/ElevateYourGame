@@ -144,3 +144,85 @@ body {
 .active {
     background-color: #A62C21;
 }
+
+/* === HEADER-BANNER === */ 
+
+.header-banner {
+    background: url("../img/header.png") no-repeat; /* nicht wiederholen */
+    width: 100%; /* immer volle Breite */
+    height: 0;  /* weil Höhe über padding-top eingestellt wird */
+    padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
+    background-size: contain; /* Inhalt im kompletten Bereich */
+}
+
+/* === GRID-SYSTEM (SICHTBARKEIT) === */
+
+.border, .border * {
+    border: 1px solid #91C4FF;
+}
+
+[class*='col-'] {
+    background-color: #BFDDFF;
+}
+
+p {
+    background-color: #91C4FF;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* === GRID-SYSTEM === */
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* clearfix-Hack */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Selektor für alle Klassen, die mit col- anfangen */
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 0.8rem;
+}
+
+.col-1 { width: 16.666%; }
+.col-2 { width: 33.333%; }
+.col-3 { width: 50%;     }
+.col-6 { width: 100%;    }
+
+/*
+
+=== WICHTIGE BREAKPOINTS ===
+
+ 480  px  (iPhone Querformat)
+ 768  px  (iPad Hochformat)
+ 1024 px  (iPad Querformat)
+
+*/
+
+@media (max-width: 1024px) {
+    .col-1 { width: 33.333%; }
+}
+
+@media (max-width: 768px) {
+    .col-1 { width: 50%;  }
+    .col-2 { width: 100%; }
+    .col-3 { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .col-1 { width: 100%; }
+    .col-2 { width: 100%; }
+    .col-3 { width: 100%; }
+}
