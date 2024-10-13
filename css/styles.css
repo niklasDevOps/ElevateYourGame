@@ -74,6 +74,18 @@ Hell Grau:         #E5E5E5
 Rot:               #A62C21
 */
 
+/* === GENERELLES === */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.active {
+  background-color: #A62C21 !important;
+}
+
 body {
     margin: 0;
     font-family: var(--primaere-schriftart), var(--sekundaere-schriftart), var(--tertiaere-schriftart), var(--fallback-schriftart);
@@ -85,65 +97,134 @@ body {
 
 /* === NAVIGATIONSLEISTE === */
 
-.header-nav {
+#header-nav {
     width: 100%;
     height: 50px;
     background-color: #3D3F45;
     position: relative;
     font-weight: bold;
     font-size: 1.1rem;
-}
-
-.header-nav > a > img {
+  }
+  
+  #header-nav a > img {
     height: 30px;
     width: auto;
-    position: absolute;
-    left: 2rem;
-    top: .55rem;
-}
-
-.header-nav > ul {
+    margin: .55rem;
+    float: left;
+  }
+  
+  #header-nav ul {
     margin: 0;
     padding: 0;
-    position: absolute;
-    right: 2rem;
+    float: right;
     height: 100%;
-}
-
-.header-nav > ul > li {
+  }
+  
+  #header-nav ul > li {
     display: inline-block;
     height: 100%;
-    padding: 0 .4rem 0 .4rem; /* oben rechts unten links */
-}
-
-.header-nav >ul > li > a {
+    padding: 0 .4rem 0 .4rem;
+  }
+  
+  #header-nav ul > li > a {
     margin-top: .8rem;
     display: inline-block;
-}
-
-.header-nav >ul > li > a:link {
+  }
+  
+  #header-nav ul > li > a:link {
     color: #fff;
     text-decoration: none;
-}
+  }
 
-.header-nav >ul > li > a:hover {
-    color: #E5E5E5;
-    text-decoration: none;
-}
-
-.header-nav >ul > li > a:active {
-    color: #E5E5E5;
-    text-decoration: none;
-}
-
-.header-nav >ul > li > a:visited {
+  #header-nav ul > li > a:visited {
     color: #fff;
     text-decoration: none;
-}
+  }
 
-.active {
-    background-color: #A62C21;
-}
+  #header-nav ul > li > a:active {
+    color: #E5E5E5;
+    text-decoration: none;
+  }
+  
+  #header-nav ul > li > a:hover {
+    color: #E5E5E5;
+    text-decoration: none;
+  }
+  
+  #header-nav .col-6 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #header-nav .container,
+  #header-nav .row,
+  #header-nav .col-6 {
+    height: 100%;
+  }
+  
+  .logo-link {
+    display: inline-block;
+  }
+  
+  /* === NAVIGATIONSLEISTE (MOBIL) === */
+  
+  #mobile-nav-button {
+    color: #fff;
+    float: right;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-top: .4rem;
+    margin-bottom: .5rem;
+  }
+  
+  #mobile-nav-button > span {
+    position: absolute;
+    top: -2px;
+    left: 7px;
+  }
+  
+  #mobile-nav-content > ul > li {
+    display: block;
+    background-color: #3D3F45;
+    height: 50px;
+    padding: 0 1.2rem;
+    text-align: center;
+  }
+  
+  #mobile-nav-dropdown {
+    position: relative;
+    float: right;
+  }
+  
+  #mobile-nav-content {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+  }
+  
+  #mobile-nav-dropdown:hover > #mobile-nav-content {
+    display: block;
+  }
+  
+  #mobile-nav {
+    display: none;
+  }
+  
+  @media (max-width: 1300px) {
+  
+    #desktop-nav {
+      display: none;
+    }
+  
+    #mobile-nav {
+      display: block;
+    }
+  
+  }
 
 /* === HEADER-BANNER === */ 
 
@@ -156,7 +237,7 @@ body {
 }
 
 /* === GRID-SYSTEM (SICHTBARKEIT) === */
-
+/*
 .border, .border * {
     border: 1px solid #91C4FF;
 }
@@ -172,7 +253,7 @@ p {
     color: #fff;
     text-align: center;
 }
-
+*/
 
 /* === GRID-SYSTEM === */
 
