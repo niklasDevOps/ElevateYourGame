@@ -7,6 +7,32 @@
 html {
     font-size: 16px;
 }
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
   
 /* === FARBEN === */
 
@@ -37,6 +63,47 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+.intro-container{
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1366px) {
+  .intro-container{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-container{
+    width: 100%;
+  }
+}
+
+.intro-container > h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.intro-container > p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1366px) {
+  .intro-container > p {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-container > p {
+    margin-bottom: 0;
+  }
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -180,24 +247,98 @@ body {
     background-size: contain; /* Inhalt im kompletten Bereich */
 }
 
-/* === GRID-SYSTEM (SICHTBARKEIT) === */
-/*
-.border, .border * {
-    border: 1px solid #91C4FF;
+/* === INFO-BEREICH === */
+
+.info-box {
+  background-color: #3D3F45;
+  text-align: center;
+  color: #fff;
+  width: 60%;
+  height: 450px;
 }
 
-[class*='col-'] {
-    background-color: #BFDDFF;
+.info-box-text {
+  padding: 0rem 3rem 2.5rem;
 }
 
-p {
-    background-color: #91C4FF;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    text-align: center;
+#info-bereich .row > .col-3:nth-of-type(even) > .info-box { /* Selektion auf gerade Boxen */
+  margin-left: 1rem;
+  margin-right: auto;
 }
-*/
+
+#info-bereich .row > .col-3:nth-of-type(odd) > .info-box { /* Selektion auf ungerade Boxen */
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.info-box > h2 {
+  font-size: 1.4rem;
+}
+
+.info-weiterlesen-btn {
+  text-decoration: none;
+  height: 40px;
+  border: 2px solid #fff;
+  display: inline-block;
+  padding-top: .4rem;
+  width: 40%;
+  min-width: 110px;
+  margin-top: 1rem;
+}
+
+.info-weiterlesen-btn:link {
+  color: #fff;
+}
+
+.info-weiterlesen-btn:visited {
+  color: #fff;
+}
+
+.info-weiterlesen-btn:active {
+  color: #fff;
+}
+
+.info-weiterlesen-btn:hover {
+  color:  #A62C21;
+  font-weight: bold;
+  border: 2px solid #A62C21;
+}
+
+#info-bereich img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1366px) {
+  .info-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-box {
+    width: 100%;
+    margin-bottom: .6rem;
+  }
+
+  #info-bereich .row > .col-3:nth-of-type(even) > .info-box { /* Selektion auf gerade Boxen */
+    margin-left: .5rem;
+  }
+  
+  #info-bereich .row > .col-3:nth-of-type(odd) > .info-box { /* Selektion auf ungerade Boxen */
+    margin-right: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #info-bereich .row > .col-3:nth-of-type(even) > .info-box { /* Selektion auf gerade Boxen */
+    margin-left: 0rem;
+  }
+  
+  #info-bereich .row > .col-3:nth-of-type(odd) > .info-box { /* Selektion auf ungerade Boxen */
+    margin-right: 0rem;
+  }
+}
 
 /* === GRID-SYSTEM === */
 
