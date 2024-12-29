@@ -340,6 +340,45 @@ body {
   }
 }
 
+/* === FOOTER === */
+
+#footer {
+  background-color: #3D3F45;
+  height: 2.8rem;
+  color: #fff;
+}
+
+#footer-nav {
+  display: inline-block;
+  float: right;
+}
+
+#footer-nav a {
+  text-decoration: none;
+}
+
+#footer-nav a:link {
+  color: #fff;
+}
+
+#footer-nav a:visited {
+  color: #fff;
+}
+
+#footer-nav a:active {
+  color: #fff;
+}
+
+#footer-nav a:hover {
+  color: #E5E5E5;
+}
+
+@media (max-width: 565px) {
+  #footer span {
+    display: none;
+  }
+}
+
 /* === GRID-SYSTEM === */
 
 .container {
