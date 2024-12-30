@@ -52,7 +52,6 @@ Grün:               #70A91F
 
 body {
     margin: 0;
-    font-family: var(--primaere-schriftart), var(--sekundaere-schriftart), var(--tertiaere-schriftart), var(--fallback-schriftart);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
