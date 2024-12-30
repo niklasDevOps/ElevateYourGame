@@ -1,9 +1,5 @@
 /* === GLOBAL === */
 
-:root {
-    
-  }
-
 html {
     font-size: 16px;
 }
@@ -37,10 +33,9 @@ section {
 /* === FARBEN === */
 
 /*
-Blau:              #1F4E8C
 Dunkel Grau:       #3D3F45    
 Hell Grau:         #E5E5E5
-Rot:               #A62C21
+Grün:               #70A91F
 */
 
 /* === GENERELLES === */
@@ -52,7 +47,7 @@ Rot:               #A62C21
 }
 
 .active {
-  background-color: #A62C21 !important;
+  background-color: #70A91F !important;
 }
 
 body {
@@ -118,9 +113,9 @@ body {
   }
   
   #header-nav a > img {
-    height: 30px;
+    height: 40px;
     width: auto;
-    margin: .55rem;
+    margin: 0.3rem;
     float: left;
   }
   
@@ -239,12 +234,52 @@ body {
 
 /* === HEADER-BANNER === */ 
 
-.header-banner {
-    background: url("../img/header.png") no-repeat; /* nicht wiederholen */
+.header-banner-start {
+    background: url("../img/football-6994604.jpg") no-repeat; /* nicht wiederholen */
     width: 100%; /* immer volle Breite */
     height: 0;  /* weil Höhe über padding-top eingestellt wird */
     padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
     background-size: contain; /* Inhalt im kompletten Bereich */
+}
+
+/* === HEADER-BANNER === */ 
+
+.header-banner-ernaehrung {
+  background: url("../img/healthy-5506822.jpg") no-repeat; /* nicht wiederholen */
+  width: 100%; /* immer volle Breite */
+  height: 0;  /* weil Höhe über padding-top eingestellt wird */
+  padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
+  background-size: contain; /* Inhalt im kompletten Bereich */
+}
+
+/* === HEADER-BANNER === */ 
+
+.header-banner-regeneration {
+  background: url("../img/spa-8598061.jpg") no-repeat; /* nicht wiederholen */
+  width: 100%; /* immer volle Breite */
+  height: 0;  /* weil Höhe über padding-top eingestellt wird */
+  padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
+  background-size: contain; /* Inhalt im kompletten Bereich */
+}
+
+/* === HEADER-BANNER === */ 
+
+.header-banner-vorbereitung {
+  background: url("../img/city-1868530.jpg") no-repeat; /* nicht wiederholen */
+  width: 100%; /* immer volle Breite */
+  height: 0;  /* weil Höhe über padding-top eingestellt wird */
+  padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
+  background-size: contain; /* Inhalt im kompletten Bereich */
+}
+
+/* === HEADER-BANNER === */ 
+
+.header-banner-praevention {
+  background: url("../img/football-1319608.jpg") no-repeat; /* nicht wiederholen */
+  width: 100%; /* immer volle Breite */
+  height: 0;  /* weil Höhe über padding-top eingestellt wird */
+  padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
+  background-size: contain; /* Inhalt im kompletten Bereich */
 }
 
 /* === INFO-BEREICH === */
@@ -299,9 +334,9 @@ body {
 }
 
 .info-weiterlesen-btn:hover {
-  color:  #A62C21;
+  color:  #70A91F;
   font-weight: bold;
-  border: 2px solid #A62C21;
+  border: 2px solid #70A91F;
 }
 
 #info-bereich img {
