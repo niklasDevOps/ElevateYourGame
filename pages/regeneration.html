@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <!-- Skip-Link ist standardmäßig visuell versteckt und wird nur bei Tastaturfokus sichtbar -->
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
 
-    <nav id="header-nav">
+    <nav id="header-nav" aria-label="Hauptnavigation">
 
         <!-- DESKTOP-NAVIGATION -->
 
@@ -20,7 +22,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <ul>
                         <li><a href="../index.html">Startseite</a></li>
@@ -40,7 +43,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <div class="clearfix" id="mobile-nav-dropdown">
                         <div id="mobile-nav-button"><span>&equiv;</span></div>
@@ -59,128 +63,132 @@
             </div>
         </div>
     </nav>
-    <!--HEADER-BANNER-->
 
-    <header class="header-banner-regeneration"></header>
+    <main id="content">
+        <!--HEADER-BANNER-->
 
-    <!--BLOG-TEXT-->
+        <header class="header-banner-regeneration"></header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <header class="intro-container">
-                    <h1>Regeneration nach Training und Spiel für Nachwuchsfußballer</h1>
-                </header>
+        <!--BLOG-TEXT-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <header class="intro-container">
+                        <h1>Regeneration nach Training und Spiel für Nachwuchsfußballer</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Für Nachwuchsfußballer ist nicht nur das Training und das Spiel entscheidend für ihre Entwicklung,
+                        sondern auch die Erholung. Eine gute Regeneration hilft, das
+                        Verletzungsrisiko zu minimieren, die Leistung zu verbessern und langfristig gesund zu bleiben. In
+                        diesem Beitrag erfährst du, welche Maßnahmen Nachwuchsspieler ergreifen
+                        können, um optimal zu regenerieren.</p>
+                    <h2>Warum ist Regeneration so wichtig?</h2>
+                    <p>Während des Trainings und Spiels wird der Körper stark beansprucht. Muskeln, Gelenke und das
+                        Herz-Kreislauf-System werden gefordert. Die Regeneration ist die Phase, in
+                        der der Körper sich erholt, Schäden repariert und neue Energie für die nächste Einheit sammelt. Für
+                        Nachwuchsspieler ist diese Phase besonders wichtig, da sich ihr Körper noch
+                        in der Entwicklung befindet.</p>
+                    <h3>Vorteile einer guten Regeneration:</h3>
+                    <ul>
+                        <li>Schnellerer Muskelaufbau und verbesserte Leistungsfähigkeit</li>
+                        <li>Reduziertes Verletzungsrisiko</li>
+                        <li>Bessere mentale Erholung und Konzentration</li>
+                    </ul>
+                    <h2>Regenerationsmaßnahmen nach Training und Spiel</h2>
+                    <h3>Auslaufen und Dehnen</h3>
+                    <p>Direkt nach dem Spiel oder Training sollte ein kurzes Auslaufen (ca. 10-15 Minuten) in moderatem
+                        Tempo erfolgen. Dies fördert die Durchblutung und hilft, Laktat aus den
+                        Muskeln abzubauen. Anschließend sollte ein gezieltes Stretching stattfinden, um die Flexibilität zu
+                        erhalten und Muskelverspannungen zu lösen.</p>
+                    <h3>Ernährung</h3>
+                    <p>Eine ausgewogene Ernährung spielt eine zentrale Rolle in der Regeneration. Insbesondere direkt nach
+                        der Belastung sollte auf eine schnelle Versorgung des Körpers mit
+                        Nährstoffen geachtet werden.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Zeitpunkt</th>
+                                <th>Nährstoffe</th>
+                                <th>Beispiele</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Direkt nach dem Training</td>
+                                <td>Kohlenhydrate, Eiweiße</td>
+                                <td>Bananen, Energieriegel, Proteinshakes</td>
+                            </tr>
+                            <tr>
+                                <td>1-2 Stunden später</td>
+                                <td>Ausgewogene Mahlzeit (Proteine, Kohlenhydrate, Fette)</td>
+                                <td>Vollkornprodukte, Gemüse, mageres Fleisch, Fisch</td>
+                            </tr>
+                            <tr>
+                                <td>Über den Tag verteilt</td>
+                                <td>Ausreichende Flüssigkeitszufuhr</td>
+                                <td>Wasser, isotonische Getränke</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Schlaf</h3>
+                    <p>Schlaf ist die wichtigste Erholungsphase für den Körper. Während des Schlafes wird das Hormon
+                        Somatropin freigesetzt, das für das Muskelwachstum und die
+                        Geweberegeneration verantwortlich ist. Jugendliche sollten versuchen, 8-10 Stunden Schlaf pro Nacht
+                        zu bekommen, um optimal zu regenerieren.</p>
+                    <h2>Passive und aktive Regenerationsmethoden</h2>
+                    <h3>Aktive Regeneration</h3>
+                    <p>Leichte körperliche Aktivitäten wie Schwimmen, Radfahren oder Yoga können dabei helfen, die
+                        Durchblutung anzuregen und die Muskulatur zu entspannen. Diese Methoden
+                        fördern den Abbau von Abfallprodukten wie Laktat und beschleunigen die Erholung.</p>
+                    <h3>Passive Regeneration</h3>
+                    <p>Zu den passiven Maßnahmen gehören:</p>
+                    <ul>
+                        <li><strong>Massage:</strong> Fördert die Durchblutung und lockert verspannte Muskulatur.</li>
+                        <li><strong>Eisbad/Kältetherapie:</strong> Hilft, Entzündungen zu reduzieren und Muskelkater zu
+                            lindern.</li>
+                        <li><strong>Sauna/Wärmetherapie:</strong> Unterstützt die Muskelentspannung und fördert die
+                            Durchblutung.</li>
+                    </ul>
+                    <h2>Regeneration planen – Tipps für Trainer und Eltern</h2>
+                    <h3>Periodisierung des Trainings</h3>
+                    <p>Die Trainingspläne sollten Phasen der intensiven Belastung und gezielte Erholungsphasen beinhalten.
+                        Ein gut durchdachter Trainingszyklus fördert langfristig die
+                        Leistungsfähigkeit und verhindert Überlastungen.</p>
+                    <h3>Mentale Erholung fördern</h3>
+                    <p>Gerade für junge Sportler ist die mentale Regeneration oft genauso wichtig wie die körperliche.
+                        Entspannungsübungen, ausreichend Freizeit und die Förderung sozialer
+                        Kontakte helfen, den Kopf freizubekommen und neue Energie zu tanken.</p>
+                    <h3>Verletzungen vorbeugen</h3>
+                    <p>Regelmäßige Regenerationsmaßnahmen helfen nicht nur bei der Erholung, sondern beugen auch
+                        Verletzungen vor. Eine gut ausgeruhte Muskulatur ist weniger anfällig für
+                        Zerrungen, Überdehnungen oder Muskelverletzungen.</p>
+                    <h2>Häufige Fehler in der Regeneration</h2>
+                    <ul>
+                        <li><strong>Zu wenig Schlaf:</strong> Viele Jugendliche unterschätzen die Bedeutung des Schlafs.
+                            Schlafmangel führt zu verminderter Leistungsfähigkeit und erhöhtem
+                            Verletzungsrisiko.</li>
+                        <li><strong>Keine regelmäßige Regeneration:</strong> Wer regelmäßig trainiert und spielt, sollte
+                            ebenso regelmäßig regenerieren. Unzureichende Erholung führt langfristig zu
+                            Überlastungsschäden.</li>
+                        <li><strong>Falsche Ernährung:</strong> Eine unzureichende Versorgung mit Nährstoffen nach dem
+                            Training kann den Regenerationsprozess verlangsamen und die
+                            Leistungsfähigkeit einschränken.</li>
+                    </ul>
+                    <h2>Fazit: Regeneration als Schlüssel zum Erfolg</h2>
+                    <p>Eine gute Regeneration ist für Nachwuchsfußballer unerlässlich, um ihre volle Leistungsfähigkeit zu
+                        entwickeln und Verletzungen vorzubeugen. Eltern und Trainer sollten die
+                        Regeneration ebenso ernst nehmen wie das Training selbst. Wer auf eine ausgewogene Kombination aus
+                        aktiver Erholung, ausreichendem Schlaf und gesunder Ernährung setzt,
+                        legt den Grundstein für eine erfolgreiche sportliche Karriere.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <p>Für Nachwuchsfußballer ist nicht nur das Training und das Spiel entscheidend für ihre Entwicklung,
-                    sondern auch die Erholung. Eine gute Regeneration hilft, das
-                    Verletzungsrisiko zu minimieren, die Leistung zu verbessern und langfristig gesund zu bleiben. In
-                    diesem Beitrag erfährst du, welche Maßnahmen Nachwuchsspieler ergreifen
-                    können, um optimal zu regenerieren.</p>
-                <h2>Warum ist Regeneration so wichtig?</h2>
-                <p>Während des Trainings und Spiels wird der Körper stark beansprucht. Muskeln, Gelenke und das
-                    Herz-Kreislauf-System werden gefordert. Die Regeneration ist die Phase, in
-                    der der Körper sich erholt, Schäden repariert und neue Energie für die nächste Einheit sammelt. Für
-                    Nachwuchsspieler ist diese Phase besonders wichtig, da sich ihr Körper noch
-                    in der Entwicklung befindet.</p>
-                <h3>Vorteile einer guten Regeneration:</h3>
-                <ul>
-                    <li>Schnellerer Muskelaufbau und verbesserte Leistungsfähigkeit</li>
-                    <li>Reduziertes Verletzungsrisiko</li>
-                    <li>Bessere mentale Erholung und Konzentration</li>
-                </ul>
-                <h2>Regenerationsmaßnahmen nach Training und Spiel</h2>
-                <h3>Auslaufen und Dehnen</h3>
-                <p>Direkt nach dem Spiel oder Training sollte ein kurzes Auslaufen (ca. 10-15 Minuten) in moderatem
-                    Tempo erfolgen. Dies fördert die Durchblutung und hilft, Laktat aus den
-                    Muskeln abzubauen. Anschließend sollte ein gezieltes Stretching stattfinden, um die Flexibilität zu
-                    erhalten und Muskelverspannungen zu lösen.</p>
-                <h3>Ernährung</h3>
-                <p>Eine ausgewogene Ernährung spielt eine zentrale Rolle in der Regeneration. Insbesondere direkt nach
-                    der Belastung sollte auf eine schnelle Versorgung des Körpers mit
-                    Nährstoffen geachtet werden.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Zeitpunkt</th>
-                            <th>Nährstoffe</th>
-                            <th>Beispiele</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Direkt nach dem Training</td>
-                            <td>Kohlenhydrate, Eiweiße</td>
-                            <td>Bananen, Energieriegel, Proteinshakes</td>
-                        </tr>
-                        <tr>
-                            <td>1-2 Stunden später</td>
-                            <td>Ausgewogene Mahlzeit (Proteine, Kohlenhydrate, Fette)</td>
-                            <td>Vollkornprodukte, Gemüse, mageres Fleisch, Fisch</td>
-                        </tr>
-                        <tr>
-                            <td>Über den Tag verteilt</td>
-                            <td>Ausreichende Flüssigkeitszufuhr</td>
-                            <td>Wasser, isotonische Getränke</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Schlaf</h3>
-                <p>Schlaf ist die wichtigste Erholungsphase für den Körper. Während des Schlafes wird das Hormon
-                    Somatropin freigesetzt, das für das Muskelwachstum und die
-                    Geweberegeneration verantwortlich ist. Jugendliche sollten versuchen, 8-10 Stunden Schlaf pro Nacht
-                    zu bekommen, um optimal zu regenerieren.</p>
-                <h2>Passive und aktive Regenerationsmethoden</h2>
-                <h3>Aktive Regeneration</h3>
-                <p>Leichte körperliche Aktivitäten wie Schwimmen, Radfahren oder Yoga können dabei helfen, die
-                    Durchblutung anzuregen und die Muskulatur zu entspannen. Diese Methoden
-                    fördern den Abbau von Abfallprodukten wie Laktat und beschleunigen die Erholung.</p>
-                <h3>Passive Regeneration</h3>
-                <p>Zu den passiven Maßnahmen gehören:</p>
-                <ul>
-                    <li><strong>Massage:</strong> Fördert die Durchblutung und lockert verspannte Muskulatur.</li>
-                    <li><strong>Eisbad/Kältetherapie:</strong> Hilft, Entzündungen zu reduzieren und Muskelkater zu
-                        lindern.</li>
-                    <li><strong>Sauna/Wärmetherapie:</strong> Unterstützt die Muskelentspannung und fördert die
-                        Durchblutung.</li>
-                </ul>
-                <h2>Regeneration planen – Tipps für Trainer und Eltern</h2>
-                <h3>Periodisierung des Trainings</h3>
-                <p>Die Trainingspläne sollten Phasen der intensiven Belastung und gezielte Erholungsphasen beinhalten.
-                    Ein gut durchdachter Trainingszyklus fördert langfristig die
-                    Leistungsfähigkeit und verhindert Überlastungen.</p>
-                <h3>Mentale Erholung fördern</h3>
-                <p>Gerade für junge Sportler ist die mentale Regeneration oft genauso wichtig wie die körperliche.
-                    Entspannungsübungen, ausreichend Freizeit und die Förderung sozialer
-                    Kontakte helfen, den Kopf freizubekommen und neue Energie zu tanken.</p>
-                <h3>Verletzungen vorbeugen</h3>
-                <p>Regelmäßige Regenerationsmaßnahmen helfen nicht nur bei der Erholung, sondern beugen auch
-                    Verletzungen vor. Eine gut ausgeruhte Muskulatur ist weniger anfällig für
-                    Zerrungen, Überdehnungen oder Muskelverletzungen.</p>
-                <h2>Häufige Fehler in der Regeneration</h2>
-                <ul>
-                    <li><strong>Zu wenig Schlaf:</strong> Viele Jugendliche unterschätzen die Bedeutung des Schlafs.
-                        Schlafmangel führt zu verminderter Leistungsfähigkeit und erhöhtem
-                        Verletzungsrisiko.</li>
-                    <li><strong>Keine regelmäßige Regeneration:</strong> Wer regelmäßig trainiert und spielt, sollte
-                        ebenso regelmäßig regenerieren. Unzureichende Erholung führt langfristig zu
-                        Überlastungsschäden.</li>
-                    <li><strong>Falsche Ernährung:</strong> Eine unzureichende Versorgung mit Nährstoffen nach dem
-                        Training kann den Regenerationsprozess verlangsamen und die
-                        Leistungsfähigkeit einschränken.</li>
-                </ul>
-                <h2>Fazit: Regeneration als Schlüssel zum Erfolg</h2>
-                <p>Eine gute Regeneration ist für Nachwuchsfußballer unerlässlich, um ihre volle Leistungsfähigkeit zu
-                    entwickeln und Verletzungen vorzubeugen. Eltern und Trainer sollten die
-                    Regeneration ebenso ernst nehmen wie das Training selbst. Wer auf eine ausgewogene Kombination aus
-                    aktiver Erholung, ausreichendem Schlaf und gesunder Ernährung setzt,
-                    legt den Grundstein für eine erfolgreiche sportliche Karriere.</p>
-            </div>
-        </div>
-    </div>
+
+    </main>
 
     <!--FOOTER-->
 
@@ -189,7 +197,8 @@
             <div class="row">
                 <div class="col-6">
                     <span>ELEVATE YOUR GAME von Niklas Franke (2024)</span>
-                    <nav id="footer-nav">
+                    <!-- aria-label der Footer-Navigation sprachlich vereinfacht und präzisiert -->
+                    <nav id="footer-nav" aria-label="Fußnavigation">
                     <a href="impressum.html">Impressum</a>
                     </nav>
                 </div>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevate your Game</title>
+    <!-- Seitentitel erweitert, damit die aktuelle Seite in Browser-Tabs und Screenreadern eindeutiger benannt ist -->
+    <title>Elevate your Game – Startseite</title>
     <!-- Standard-Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- PNG-Favicons für moderne Browser -->
@@ -16,10 +17,12 @@
 </head>
 
 <body>
+     <!-- Skip-Link ist standardmäßig visuell versteckt und wird nur bei Tastaturfokus sichtbar -->
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
 
-    <nav id="header-nav">
+    <nav id="header-nav" aria-label="Hauptnavigation">
 
         <!-- DESKTOP-NAVIGATION -->
 
@@ -27,10 +30,11 @@
             <div class="row">
                 <div class="col-6">
                     <a href="index.html" class="logo-link">
-                        <img src="img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="img/logo.png" alt="Elevate your Game">
                     </a>
                     <ul>
-                        <li class="active"><a href="index.html">Startseite</a></li>
+                        <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
                         <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a></li>
                         <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
                         <li><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></li>
@@ -47,13 +51,17 @@
             <div class="row">
                 <div class="col-6">
                     <a href="index.html" class="logo-link">
-                        <img src="img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="img/logo.png" alt="Elevate your Game">
                     </a>
                     <div class="clearfix" id="mobile-nav-dropdown">
-                        <div id="mobile-nav-button"><span>&equiv;</span></div>
+                        <!-- Mobile Navigation als echtes <button>-Element umgesetzt, damit sie per Tastatur und Screenreader bedienbar ist -->
+                        <button id="mobile-nav-button" type="button" aria-expanded="false" aria-controls="mobile-nav-content" aria-label="Menü öffnen">
+                            <span aria-hidden="true">&equiv;</span>
+                        </button>
                         <div class="clearfix" id="mobile-nav-content">
                             <ul>
-                                <li class="active"><a href="index.html">Startseite</a></li>
+                                <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
                                 <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a>
                                 </li>
                                 <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
@@ -68,84 +76,98 @@
         </div>
     </nav>
 
-    <!--HEADER-BANNER-->
+    <main id="content">
+        <!--HEADER-BANNER-->
 
-    <header class="header-banner-start"></header>
+        <!-- Dekoratives Banner aus semantischem <header> in <div> geändert und für Screenreader verborgen -->
+        <div class="header-banner-start" aria-hidden="true"></div>
 
-    <!--INFO-BEREICH-->
+        <!--INFO-BEREICH-->
 
-    <section id="info-bereich">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <header class="intro-container">
-                        <h1>Allgemeiner Überblick</h1>
-                        <p>Hier findest du alles, was du brauchst, um auf und neben dem Platz dein volles Potenzial
-                            auszuschöpfen. Mit wertvollen Einblicken und praktischen Tipps erfährst du alles, was
-                            wichtig und entscheidend ist.</p>
-                    </header>
+        <section id="info-bereich">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <header class="intro-container">
+                            <h1>Allgemeiner Überblick</h1>
+                            <p>Hier findest du alles, was du brauchst, um auf und neben dem Platz dein volles Potenzial
+                                auszuschöpfen. Mit wertvollen Einblicken und praktischen Tipps erfährst du alles, was
+                                wichtig und entscheidend ist.</p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <article class="info-box">
+                            <!-- Alt-Texte der Artikelbilder überarbeitet: dekorative Bilder leer markieren oder inhaltlich beschreiben statt nur den Artikelnamen zu wiederholen -->
+                            <img src="img/healthy-5506822.jpg" alt="Foto mit gesunden Lebensmitteln">
+                            <div class="info-box-text">
+                                <!-- Überschrift verlinkt, damit der Artikel leichter erreichbar und besser bedienbar ist -->
+                                <h2><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a></h2>
+                                <p>Fußball ist eine anspruchsvolle Sportart, die nicht nur technisches Geschick, sondern
+                                    auch
+                                    körperliche Fitness erfordert. Besonders für Nachwuchsfußballer ...</p>
+                                <!-- Linktexte ergänzt, damit Screenreader das Ziel von "Weiter lesen" eindeutig erkennen -->
+                                <a class="info-weiterlesen-btn" href="pages/trainings-ernaehrungstipps.html">Mehr zu Trainings- und Ernährungstipps</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article class="info-box">
+                            <!-- Alt-Texte der Artikelbilder überarbeitet: dekorative Bilder leer markieren oder inhaltlich beschreiben statt nur den Artikelnamen zu wiederholen -->
+                            <img src="img/football-1319608.jpg" alt="Foto eines verletzten Fussballers auf dem Rasen">
+                            <div class="info-box-text">
+                                <!-- Überschrift verlinkt, damit der Artikel leichter erreichbar und besser bedienbar ist -->
+                                <h2><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></h2>
+                                <p>Fußball ist eine der beliebtesten Sportarten weltweit und viele Kinder und Jugendliche
+                                    träumen davon,
+                                    ein professioneller Fußballer zu werden. Doch der Weg dorthin ...</p>
+                                
+                                <!-- Linktexte ergänzt, damit Screenreader das Ziel von "Weiter lesen" eindeutig erkennen -->
+                                <a class="info-weiterlesen-btn" href="pages/verletzungspraevention.html">Mehr zur Verletzungsprävention</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <article class="info-box">
+                            <!-- Alt-Texte der Artikelbilder überarbeitet: dekorative Bilder leer markieren oder inhaltlich beschreiben statt nur den Artikelnamen zu wiederholen -->
+                            <img src="img/city-1868530.jpg" alt="Foto eines Mannes der entspannt aus dem Fenster schaut">
+                            <div class="info-box-text">
+                                <!-- Überschrift verlinkt, damit der Artikel leichter erreichbar und besser bedienbar ist -->
+                                <h2><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></h2>
+                                <p>Die mentale Vorbereitung ist für den Erfolg im Fußball genauso wichtig wie das
+                                    körperliche Training.
+                                    Nachwuchsfußballer stehen oft unter besonderem Druck, sowohl von sich selbst als auch
+                                    von Außen. Um
+                                    bei Spielen ...</p>
+                                <!-- Linktexte ergänzt, damit Screenreader das Ziel von "Weiter lesen" eindeutig erkennen -->
+                                <a class="info-weiterlesen-btn" href="pages/mentale-vorbereitung.html">Mehr zur mentalen Vorbereitung</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article class="info-box">
+                            <!-- Alt-Texte der Artikelbilder überarbeitet: dekorative Bilder leer markieren oder inhaltlich beschreiben statt nur den Artikelnamen zu wiederholen -->
+                            <img src="img/spa-8598061.jpg" alt="Foto von gestapelten flachen Steinen am Wasser">
+                            <div class="info-box-text">
+                                <!-- Überschrift verlinkt, damit der Artikel leichter erreichbar und besser bedienbar ist -->
+                                <h2><a href="pages/regeneration.html">Regeneration</a></h2>
+                                <p>Für Nachwuchsfußballer ist nicht nur das Training und das Spiel entscheidend für ihre
+                                    Entwicklung,
+                                    sondern auch die Erholung. Eine gute Regeneration hilft, ...</p>
+                                
+                                <!-- Linktexte ergänzt, damit Screenreader das Ziel von "Weiter lesen" eindeutig erkennen -->
+                                <a class="info-weiterlesen-btn" href="pages/regeneration.html">Mehr zur Regeneration</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <article class="info-box">
-                        <img src="img/healthy-5506822.jpg" alt="Bild für Artikel über Trainings- und Ernährungstipps">
-                        <div class="info-box-text">
-                            <h2>Trainings- und Ernährungstipps</h2>
-                            <p>Fußball ist eine anspruchsvolle Sportart, die nicht nur technisches Geschick, sondern
-                                auch
-                                körperliche Fitness erfordert. Besonders für Nachwuchsfußballer ...</p>
-                            <a class="info-weiterlesen-btn" href="pages/trainings-ernaehrungstipps.html">Weiter
-                                lesen</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-3">
-                    <article class="info-box">
-                        <img src="img/football-1319608.jpg" alt="Bild für Artikel über Verletzungsprävention">
-                        <div class="info-box-text">
-                            <h2>Verletzungsprävention</h2>
-                            <p>Fußball ist eine der beliebtesten Sportarten weltweit und viele Kinder und Jugendliche
-                                träumen davon,
-                                ein professioneller Fußballer zu werden. Doch der Weg dorthin ...</p>
-                            <br>
-                            <a class="info-weiterlesen-btn" href="pages/verletzungspraevention.html">Weiter lesen</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <article class="info-box">
-                        <img src="img/city-1868530.jpg" alt="Bild für Artikel über mentale Vorbereitung">
-                        <div class="info-box-text">
-                            <h2>Mentale Vorbereitung</h2>
-                            <p>Die mentale Vorbereitung ist für den Erfolg im Fußball genauso wichtig wie das
-                                körperliche Training.
-                                Nachwuchsfußballer stehen oft unter besonderem Druck, sowohl von sich selbst als auch
-                                von Außen. Um
-                                bei Spielen ...</p>
-                            <a class="info-weiterlesen-btn" href="pages/mentale-vorbereitung.html">Weiter lesen</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-3">
-                    <article class="info-box">
-                        <img src="img/spa-8598061.jpg" alt="Bild für Artikel über Regeneration">
-                        <div class="info-box-text">
-                            <h2>Regeneration</h2>
-                            <p>Für Nachwuchsfußballer ist nicht nur das Training und das Spiel entscheidend für ihre
-                                Entwicklung,
-                                sondern auch die Erholung. Eine gute Regeneration hilft, ...</p>
-                            <br>
-                            <a class="info-weiterlesen-btn" href="pages/regeneration.html">Weiter lesen</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
+      
     <!--FOOTER-->
 
     <footer id="footer">
@@ -153,7 +175,8 @@
             <div class="row">
                 <div class="col-6">
                     <span>ELEVATE YOUR GAME von Niklas Franke (2024)</span>
-                    <nav id="footer-nav">
+                    <!-- aria-label der Footer-Navigation sprachlich vereinfacht und präzisiert -->
+                    <nav id="footer-nav" aria-label="Fußnavigation">
                         <a href="pages/impressum.html">Impressum</a>
                     </nav>
                 </div>

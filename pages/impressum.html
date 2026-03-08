@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <!-- Skip-Link ist standardmäßig visuell versteckt und wird nur bei Tastaturfokus sichtbar -->
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
 
-    <nav id="header-nav">
+    <nav id="header-nav" aria-label="Hauptnavigation">
 
         <!-- DESKTOP-NAVIGATION -->
         
@@ -20,7 +22,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <ul>
                         <li><a href="../index.html">Startseite</a></li>
@@ -40,7 +43,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <div class="clearfix" id="mobile-nav-dropdown">
                         <div id="mobile-nav-button"><span>&equiv;</span></div>
@@ -60,44 +64,48 @@
         </div>
     </nav>
 
-    <!--HEADER-BANNER-->
+    <main id="content">
 
-    <header class="header-banner-start"></header>
+        <!--HEADER-BANNER-->
 
-    <!--IMPRESSUM-TEXT-->
+        <header class="header-banner-start"></header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <header class="intro-container">
-                    <h1>Impressum und Bildnachweis</h1>
-                </header>
+        <!--IMPRESSUM-TEXT-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <header class="intro-container">
+                        <h1>Impressum und Bildnachweis</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h1>Impressum</h1>
+                    <p>Niklas Franke<br />
+                    M&uuml;hlenviertel 72<br />
+                    04509 Delitzsch</p>
+                    <h2>Kontakt</h2>
+                    <p>Telefon: +49 170 3489223<br />
+                    Telefax: 03212-1410732<br />
+                    E-Mail: franke_niklas@icloud.com</p>
+                    <h2>Redaktionell verantwortlich</h2>
+                    <p>Niklas Franke<br />
+                </div>
+                <div class="col-3">
+                    <h1>Bildnachweis</h1>
+                    <p>Startseite und Impressum - Pixabay football-6994604</p>
+                    <p>Trainings- und Ernährungstipps - Pixabay healthy-5506822</p>
+                    <p>Verletzungsprävention - Pixabay football-1319608</p>
+                    <p>Mentale Vorbereitung - Pixabay city-1868530</p>
+                    <p>Regeneration - Pixabay spa-8598061</p>
+                    
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <h1>Impressum</h1>
-                <p>Niklas Franke<br />
-                M&uuml;hlenviertel 72<br />
-                04509 Delitzsch</p>
-                <h2>Kontakt</h2>
-                <p>Telefon: +49 170 3489223<br />
-                Telefax: 03212-1410732<br />
-                E-Mail: franke_niklas@icloud.com</p>
-                <h2>Redaktionell verantwortlich</h2>
-                <p>Niklas Franke<br />
-            </div>
-            <div class="col-3">
-                <h1>Bildnachweis</h1>
-                <p>Startseite und Impressum - Pixabay football-6994604</p>
-                <p>Trainings- und Ernährungstipps - Pixabay healthy-5506822</p>
-                <p>Verletzungsprävention - Pixabay football-1319608</p>
-                <p>Mentale Vorbereitung - Pixabay city-1868530</p>
-                <p>Regeneration - Pixabay spa-8598061</p>
-                
-            </div>
-        </div>
-    </div>
+
+    </main>
 
     <!--FOOTER-->
 
@@ -106,7 +114,8 @@
             <div class="row">
                 <div class="col-6">
                     <span>ELEVATE YOUR GAME von Niklas Franke (2024)</span>
-                    <nav id="footer-nav">
+                    <!-- aria-label der Footer-Navigation sprachlich vereinfacht und präzisiert -->
+                    <nav id="footer-nav" aria-label="Fußnavigation">
                     <a href="impressum.html">Impressum</a>
                     </nav>
                 </div>

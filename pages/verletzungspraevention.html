@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <!-- Skip-Link ist standardmäßig visuell versteckt und wird nur bei Tastaturfokus sichtbar -->
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
 
-    <nav id="header-nav">
+    <nav id="header-nav" aria-label="Hauptnavigation">
 
         <!-- DESKTOP-NAVIGATION -->
 
@@ -20,7 +22,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <ul>
                         <li><a href="../index.html">Startseite</a></li>
@@ -40,7 +43,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <div class="clearfix" id="mobile-nav-dropdown">
                         <div id="mobile-nav-button"><span>&equiv;</span></div>
@@ -59,157 +63,160 @@
             </div>
         </div>
     </nav>
+    <main id="content"></main>
 
-    <!--HEADER-BANNER-->
+        <!--HEADER-BANNER-->
 
-    <header class="header-banner-praevention"></header>
+        <header class="header-banner-praevention"></header>
 
-    <!--BLOG-TEXT-->
+        <!--BLOG-TEXT-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <header class="intro-container">
-                    <h1>Verletzungsprävention für Nachwuchsfußballer</h1>
-                </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <header class="intro-container">
+                        <h1>Verletzungsprävention für Nachwuchsfußballer</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Fußball ist eine der beliebtesten Sportarten weltweit und viele Kinder und Jugendliche träumen davon,
+                        ein professioneller Fußballer zu werden. Doch der Weg dorthin kann durch Verletzungen erschwert
+                        werden. Gerade im
+                        Nachwuchsbereich ist es wichtig, frühzeitig Maßnahmen zur Verletzungsprävention zu ergreifen, um
+                        langfristige Schäden zu vermeiden und die Leistungsfähigkeit zu maximieren. In diesem Beitrag
+                        erfährst du, welche Faktoren
+                        zur Verletzungsprävention bei Nachwuchsfußballern beitragen und wie du sie umsetzen kannst.</p>
+                    <h2>Warum ist Verletzungsprävention im Jugendfußball so wichtig?</h2>
+                    <p>Nachwuchsfußballer befinden sich in einer wichtigen Phase ihrer körperlichen und motorischen
+                        Entwicklung. Unzureichendes Training, eine falsche Belastung oder mangelnde Regeneration können
+                        schnell zu Verletzungen
+                        führen, die das Nachwuchstalent nicht nur kurzfristig beeinträchtigen, sondern auch langfristige
+                        Folgen haben können.</p>
+                    <p>Die häufigsten Verletzungen im Jugendfußball betreffen:</p>
+                    <ul>
+                        <li>Muskelzerrungen</li>
+                        <li>Bänderrisse (insbesondere Sprunggelenk und Knie)</li>
+                        <li>Prellungen</li>
+                        <li>Knochenbrüche</li>
+                    </ul>
+                    <p>Eine gut durchdachte Präventionsstrategie kann die Verletzungshäufigkeit deutlich senken und die
+                        allgemeine Fitness und Gesundheit der Spieler fördern.</p>
+                    <h2>Grundprinzipien der Verletzungsprävention</h2>
+                    <p>Um Verletzungen zu vermeiden, sollten Trainer, Eltern und Spieler einige Grundprinzipien beachten:
+                    </p>
+                    <ol>
+                        <li><strong>Aufwärmen und Dehnen</strong>: Eine gute Aufwärmroutine vor dem Training oder Spiel
+                            reduziert das Risiko von Muskel- und Gelenkverletzungen.</li>
+                        <li><strong>Kräftigungstraining</strong>: Gezieltes Krafttraining, besonders für die Rumpf-, Bein-
+                            und Hüftmuskulatur, stabilisiert den Bewegungsapparat.</li>
+                        <li><strong>Technikschulung</strong>: Gute Technik verringert das Verletzungsrisiko bei Zweikämpfen
+                            und Sprüngen.</li>
+                        <li><strong>Regeneration</strong>: Ausreichende Erholungszeiten zwischen Trainingseinheiten und
+                            Spielen sind essenziell für die Muskulatur und Gelenke.</li>
+                        <li><strong>Gutes Schuhwerk und Schutz</strong>: Passende Fußballschuhe sowie das Tragen von
+                            Schienbeinschonern sind unverzichtbar.</li>
+                    </ol>
+                    <h2>Effektive Aufwärmroutine im Fußball</h2>
+                    <p>Eine optimale Aufwärmroutine sollte folgende Schritte enthalten:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Dauer</th>
+                                <th>Inhalt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Allgemeines Aufwärmen</td>
+                                <td>5–10 Minuten</td>
+                                <td>Lockeres Laufen, Mobilisationsübungen für Gelenke</td>
+                            </tr>
+                            <tr>
+                                <td>Spezifisches Aufwärmen</td>
+                                <td>10 Minuten</td>
+                                <td>Ballführung, Passübungen, kleine Spielformen</td>
+                            </tr>
+                            <tr>
+                                <td>Stretching</td>
+                                <td>5 Minuten</td>
+                                <td>Dynamisches Dehnen zur Vorbereitung der Muskulatur</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Wichtige Muskelgruppen und Trainingsübungen</h2>
+                    <p>Die Stärkung bestimmter Muskelgruppen ist entscheidend, um Verletzungen vorzubeugen. Hier einige
+                        Trainingsübungen, die speziell auf den Fußball abgestimmt sind:</p>
+                    <ul>
+                        <li><strong>Beine und Hüfte:</strong>
+                            <ul>
+                                <li>Kniebeugen</li>
+                                <li>Ausfallschritte</li>
+                                <li>Beinheben</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rumpf und Rücken:</strong>
+                            <ul>
+                                <li>Planks (Unterarmstütz)</li>
+                                <li>Seitliches Beinheben</li>
+                                <li>Bauchpressen (Crunches)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Sprunggelenk:</strong>
+                            <ul>
+                                <li>Einbeinige Balanceübungen</li>
+                                <li>Wadenheben auf einer Stufe</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>Regeneration nicht vernachlässigen</h2>
+                    <p>Gerade junge Spieler neigen dazu, die Bedeutung von Erholung zu unterschätzen. Dabei ist die richtige
+                        Regeneration genauso wichtig wie das Training selbst. Folgende Maßnahmen fördern eine optimale
+                        Erholung:</p>
+                    <ul>
+                        <li><strong>Schlaf</strong>: Ein Jugendlicher benötigt etwa 8–10 Stunden Schlaf pro Nacht.</li>
+                        <li><strong>Aktive Erholung</strong>: Lockeres Schwimmen oder Radfahren helfen, die Muskulatur zu
+                            entspannen.</li>
+                        <li><strong>Ernährung</strong>: Eine ausgewogene Ernährung mit ausreichend Proteinen, Kohlenhydraten
+                            und gesunden Fetten unterstützt den Muskelaufbau und die Regeneration.</li>
+                    </ul>
+                    <h2>Techniktraining zur Reduktion des Verletzungsrisikos</h2>
+                    <p>Fehlerhafte Techniken können häufig die Ursache für Verletzungen sein. Trainer sollten daher darauf
+                        achten, dass die Nachwuchsspieler die Grundtechniken wie Passspiel, Schusstechnik und Körperhaltung
+                        bei
+                        Zweikämpfen sauber erlernen. Hier einige Tipps:</p>
+                    <ul>
+                        <li><strong>Schuss- und Passübungen</strong>: Achte auf eine korrekte Fußhaltung und Körperbalance.
+                        </li>
+                        <li><strong>Zweikampfschulung</strong>: Die richtige Haltung und das Timing im Zweikampf können das
+                            Verletzungsrisiko deutlich senken.</li>
+                    </ul>
+                    <h2>Checkliste: Verletzungsprävention im Jugendfußball</h2>
+                    <p>Eine einfache Checkliste kann dabei helfen, sicherzustellen, dass alle wichtigen Präventionsmaßnahmen
+                        berücksichtigt werden:</p>
+                    <ul>
+                        <li>Aufwärmen und Dehnen vor jedem Training und Spiel</li>
+                        <li>Regelmäßiges Kräftigungstraining der relevanten Muskelgruppen</li>
+                        <li>Technikschulung und Fehlerkorrektur</li>
+                        <li>Ausreichend Schlaf und gesunde Ernährung</li>
+                        <li>Pausen und Regeneration einhalten</li>
+                        <li>Tragen der richtigen Ausrüstung (Schuhe, Schienbeinschoner)</li>
+                    </ul>
+                    <h2>Fazit</h2>
+                    <p>Verletzungsprävention ist im Jugendfußball ein entscheidender Faktor, um jungen Spielern eine
+                        nachhaltige und gesunde sportliche Entwicklung zu ermöglichen. Mit gezielten Maßnahmen wie
+                        Aufwärmen, Technikschulung,
+                        Krafttraining und ausreichend Regeneration kann das Risiko von Verletzungen minimiert und die
+                        Leistungsfähigkeit gesteigert werden. Eltern, Trainer und die Spieler selbst sollten daher auf eine
+                        ganzheitliche
+                        Präventionsstrategie setzen, um die Freude am Fußball langfristig zu erhalten.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <p>Fußball ist eine der beliebtesten Sportarten weltweit und viele Kinder und Jugendliche träumen davon,
-                    ein professioneller Fußballer zu werden. Doch der Weg dorthin kann durch Verletzungen erschwert
-                    werden. Gerade im
-                    Nachwuchsbereich ist es wichtig, frühzeitig Maßnahmen zur Verletzungsprävention zu ergreifen, um
-                    langfristige Schäden zu vermeiden und die Leistungsfähigkeit zu maximieren. In diesem Beitrag
-                    erfährst du, welche Faktoren
-                    zur Verletzungsprävention bei Nachwuchsfußballern beitragen und wie du sie umsetzen kannst.</p>
-                <h2>Warum ist Verletzungsprävention im Jugendfußball so wichtig?</h2>
-                <p>Nachwuchsfußballer befinden sich in einer wichtigen Phase ihrer körperlichen und motorischen
-                    Entwicklung. Unzureichendes Training, eine falsche Belastung oder mangelnde Regeneration können
-                    schnell zu Verletzungen
-                    führen, die das Nachwuchstalent nicht nur kurzfristig beeinträchtigen, sondern auch langfristige
-                    Folgen haben können.</p>
-                <p>Die häufigsten Verletzungen im Jugendfußball betreffen:</p>
-                <ul>
-                    <li>Muskelzerrungen</li>
-                    <li>Bänderrisse (insbesondere Sprunggelenk und Knie)</li>
-                    <li>Prellungen</li>
-                    <li>Knochenbrüche</li>
-                </ul>
-                <p>Eine gut durchdachte Präventionsstrategie kann die Verletzungshäufigkeit deutlich senken und die
-                    allgemeine Fitness und Gesundheit der Spieler fördern.</p>
-                <h2>Grundprinzipien der Verletzungsprävention</h2>
-                <p>Um Verletzungen zu vermeiden, sollten Trainer, Eltern und Spieler einige Grundprinzipien beachten:
-                </p>
-                <ol>
-                    <li><strong>Aufwärmen und Dehnen</strong>: Eine gute Aufwärmroutine vor dem Training oder Spiel
-                        reduziert das Risiko von Muskel- und Gelenkverletzungen.</li>
-                    <li><strong>Kräftigungstraining</strong>: Gezieltes Krafttraining, besonders für die Rumpf-, Bein-
-                        und Hüftmuskulatur, stabilisiert den Bewegungsapparat.</li>
-                    <li><strong>Technikschulung</strong>: Gute Technik verringert das Verletzungsrisiko bei Zweikämpfen
-                        und Sprüngen.</li>
-                    <li><strong>Regeneration</strong>: Ausreichende Erholungszeiten zwischen Trainingseinheiten und
-                        Spielen sind essenziell für die Muskulatur und Gelenke.</li>
-                    <li><strong>Gutes Schuhwerk und Schutz</strong>: Passende Fußballschuhe sowie das Tragen von
-                        Schienbeinschonern sind unverzichtbar.</li>
-                </ol>
-                <h2>Effektive Aufwärmroutine im Fußball</h2>
-                <p>Eine optimale Aufwärmroutine sollte folgende Schritte enthalten:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Phase</th>
-                            <th>Dauer</th>
-                            <th>Inhalt</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Allgemeines Aufwärmen</td>
-                            <td>5–10 Minuten</td>
-                            <td>Lockeres Laufen, Mobilisationsübungen für Gelenke</td>
-                        </tr>
-                        <tr>
-                            <td>Spezifisches Aufwärmen</td>
-                            <td>10 Minuten</td>
-                            <td>Ballführung, Passübungen, kleine Spielformen</td>
-                        </tr>
-                        <tr>
-                            <td>Stretching</td>
-                            <td>5 Minuten</td>
-                            <td>Dynamisches Dehnen zur Vorbereitung der Muskulatur</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2>Wichtige Muskelgruppen und Trainingsübungen</h2>
-                <p>Die Stärkung bestimmter Muskelgruppen ist entscheidend, um Verletzungen vorzubeugen. Hier einige
-                    Trainingsübungen, die speziell auf den Fußball abgestimmt sind:</p>
-                <ul>
-                    <li><strong>Beine und Hüfte:</strong>
-                        <ul>
-                            <li>Kniebeugen</li>
-                            <li>Ausfallschritte</li>
-                            <li>Beinheben</li>
-                        </ul>
-                    </li>
-                    <li><strong>Rumpf und Rücken:</strong>
-                        <ul>
-                            <li>Planks (Unterarmstütz)</li>
-                            <li>Seitliches Beinheben</li>
-                            <li>Bauchpressen (Crunches)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Sprunggelenk:</strong>
-                        <ul>
-                            <li>Einbeinige Balanceübungen</li>
-                            <li>Wadenheben auf einer Stufe</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h2>Regeneration nicht vernachlässigen</h2>
-                <p>Gerade junge Spieler neigen dazu, die Bedeutung von Erholung zu unterschätzen. Dabei ist die richtige
-                    Regeneration genauso wichtig wie das Training selbst. Folgende Maßnahmen fördern eine optimale
-                    Erholung:</p>
-                <ul>
-                    <li><strong>Schlaf</strong>: Ein Jugendlicher benötigt etwa 8–10 Stunden Schlaf pro Nacht.</li>
-                    <li><strong>Aktive Erholung</strong>: Lockeres Schwimmen oder Radfahren helfen, die Muskulatur zu
-                        entspannen.</li>
-                    <li><strong>Ernährung</strong>: Eine ausgewogene Ernährung mit ausreichend Proteinen, Kohlenhydraten
-                        und gesunden Fetten unterstützt den Muskelaufbau und die Regeneration.</li>
-                </ul>
-                <h2>Techniktraining zur Reduktion des Verletzungsrisikos</h2>
-                <p>Fehlerhafte Techniken können häufig die Ursache für Verletzungen sein. Trainer sollten daher darauf
-                    achten, dass die Nachwuchsspieler die Grundtechniken wie Passspiel, Schusstechnik und Körperhaltung
-                    bei
-                    Zweikämpfen sauber erlernen. Hier einige Tipps:</p>
-                <ul>
-                    <li><strong>Schuss- und Passübungen</strong>: Achte auf eine korrekte Fußhaltung und Körperbalance.
-                    </li>
-                    <li><strong>Zweikampfschulung</strong>: Die richtige Haltung und das Timing im Zweikampf können das
-                        Verletzungsrisiko deutlich senken.</li>
-                </ul>
-                <h2>Checkliste: Verletzungsprävention im Jugendfußball</h2>
-                <p>Eine einfache Checkliste kann dabei helfen, sicherzustellen, dass alle wichtigen Präventionsmaßnahmen
-                    berücksichtigt werden:</p>
-                <ul>
-                    <li>Aufwärmen und Dehnen vor jedem Training und Spiel</li>
-                    <li>Regelmäßiges Kräftigungstraining der relevanten Muskelgruppen</li>
-                    <li>Technikschulung und Fehlerkorrektur</li>
-                    <li>Ausreichend Schlaf und gesunde Ernährung</li>
-                    <li>Pausen und Regeneration einhalten</li>
-                    <li>Tragen der richtigen Ausrüstung (Schuhe, Schienbeinschoner)</li>
-                </ul>
-                <h2>Fazit</h2>
-                <p>Verletzungsprävention ist im Jugendfußball ein entscheidender Faktor, um jungen Spielern eine
-                    nachhaltige und gesunde sportliche Entwicklung zu ermöglichen. Mit gezielten Maßnahmen wie
-                    Aufwärmen, Technikschulung,
-                    Krafttraining und ausreichend Regeneration kann das Risiko von Verletzungen minimiert und die
-                    Leistungsfähigkeit gesteigert werden. Eltern, Trainer und die Spieler selbst sollten daher auf eine
-                    ganzheitliche
-                    Präventionsstrategie setzen, um die Freude am Fußball langfristig zu erhalten.</p>
-            </div>
-        </div>
-    </div>
+
+    </main>
 
     <!--FOOTER-->
 
@@ -218,7 +225,8 @@
             <div class="row">
                 <div class="col-6">
                     <span>ELEVATE YOUR GAME von Niklas Franke (2024)</span>
-                    <nav id="footer-nav">
+                    <!-- aria-label der Footer-Navigation sprachlich vereinfacht und präzisiert -->
+                    <nav id="footer-nav" aria-label="Fußnavigation">
                     <a href="impressum.html">Impressum</a>
                     </nav>
                 </div>

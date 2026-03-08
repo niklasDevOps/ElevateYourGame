@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <!-- Skip-Link ist standardmäßig visuell versteckt und wird nur bei Tastaturfokus sichtbar -->
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
 
-    <nav id="header-nav">
+    <nav id="header-nav" aria-label="Hauptnavigation">
 
         <!-- DESKTOP-NAVIGATION -->
 
@@ -20,7 +22,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <ul>
                         <li><a href="../index.html">Startseite</a></li>
@@ -40,7 +43,8 @@
             <div class="row">
                 <div class="col-6">
                     <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Das Logo von Elevate your Game">
+                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                        <img src="../img/logo.png" alt="Elevate your Game">
                     </a>
                     <div class="clearfix" id="mobile-nav-dropdown">
                         <div id="mobile-nav-button"><span>&equiv;</span></div>
@@ -59,158 +63,162 @@
             </div>
         </div>
     </nav>
-    <!--HEADER-BANNER-->
 
-    <header class="header-banner-vorbereitung"></header>
+    <main id="content">
+        <!--HEADER-BANNER-->
 
-    <!--BLOG-TEXT-->
+        <header class="header-banner-vorbereitung"></header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <header class="intro-container">
-                    <h1>Mentale Vorbereitung auf Spiele für Nachwuchsfußballer</h1>
-                </header>
+        <!--BLOG-TEXT-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <header class="intro-container">
+                        <h1>Mentale Vorbereitung auf Spiele für Nachwuchsfußballer</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Die mentale Vorbereitung ist für den Erfolg im Fußball genauso wichtig wie das körperliche Training.
+                        Nachwuchsfußballer stehen oft unter besonderem Druck, sowohl von sich selbst als auch von Außen. Um
+                        bei Spielen
+                        die beste Leistung abrufen zu können, ist eine gezielte mentale Vorbereitung entscheidend. In diesem
+                        Beitrag werde ich euch verschiedene Techniken und Strategien zeigen, wie sich junge Spieler
+                        mental auf
+                        Wettkämpfe vorbereiten können.</p>
+                    <h2>Warum ist mentale Vorbereitung so wichtig?</h2>
+                    <p>Die mentale Stärke beeinflusst nicht nur die Leistung auf dem Spielfeld, sondern auch das
+                        Wohlbefinden des Spielers. Wer mental gut vorbereitet ist, geht selbstbewusster ins Spiel und kann
+                        auch in schwierigen
+                        Situationen einen kühlen Kopf bewahren. Oft entscheiden mentale Faktoren über Sieg oder Niederlage,
+                        denn wie du auf Rückschläge oder Stress reagierst, ist ein Schlüssel zum Erfolg.</p>
+                    <h3>Vorteile der mentalen Vorbereitung:</h3>
+                    <ul>
+                        <li><strong>Selbstbewusstsein:</strong> Mehr Vertrauen in die eigenen Fähigkeiten.</li>
+                        <li><strong>Stressbewältigung:</strong> Besserer Umgang mit Drucksituationen.</li>
+                        <li><strong>Fokus:</strong> Bessere Konzentration auf die Aufgaben im Spiel.</li>
+                        <li><strong>Motivation:</strong> Stärkere innere Antriebskraft, auch in schwierigen Phasen.</li>
+                    </ul>
+                    <h2>Techniken der mentalen Vorbereitung</h2>
+                    <p>Die mentale Vorbereitung kann auf verschiedene Weisen erfolgen. Hier sind einige bewährte Techniken,
+                        die Nachwuchsfußballern helfen können, sich mental auf Spiele einzustellen.</p>
+                    <h3>Visualisierung</h3>
+                    <p>Visualisierung ist eine Technik, bei der der Spieler sich bereits vor dem Spiel den Ablauf und seine
+                        eigenen Handlungen vorstellt. Diese mentale Vorwegnahme von Spielsituationen hilft dabei,
+                        Selbstbewusstsein zu
+                        stärken und die Ausführung bestimmter Aktionen zu verbessern.</p>
+                    <h4>Wie funktioniert Visualisierung?</h4>
+                    <ul>
+                        <li>Nimm dir 10-15 Minuten Zeit in einer ruhigen Umgebung.</li>
+                        <li>Stelle dir detailliert vor, wie du im Spiel agierst: z. B. Pässe spielst, Tore schießt oder
+                            defensiv verteidigst.</li>
+                        <li>Versuche, alle Sinne mit einzubeziehen: Wie fühlt sich der Ball an? Was hörst du auf dem Platz?
+                            Wie sieht das Spielfeld aus?</li>
+                    </ul>
+                    <h3>Atemtechniken</h3>
+                    <p>Atemübungen können helfen, sich zu entspannen und den Stress zu reduzieren. Eine bewusste, tiefe
+                        Atmung kann die Nervosität vor einem Spiel lindern und für mehr Gelassenheit sorgen.</p>
+                    <h4>Beispiel einer Atemtechnik:</h4>
+                    <ol>
+                        <li>Atme tief durch die Nase ein (4 Sekunden).</li>
+                        <li>Halte den Atem für 4 Sekunden an.</li>
+                        <li>Atme langsam durch den Mund aus (6 Sekunden).</li>
+                        <li>Wiederhole dies für 5-10 Minuten, bis du ruhiger wirst.</li>
+                    </ol>
+                    <h3>Positive Selbstgespräche</h3>
+                    <p>Innere Monologe haben einen großen Einfluss auf die mentale Stärke. Negative Gedanken können
+                        Unsicherheit und Angst verstärken, während positive Selbstgespräche die Zuversicht fördern.</p>
+                    <h4>Beispiele für positive Affirmationen:</h4>
+                    <ul>
+                        <li>„Ich bin gut vorbereitet.“</li>
+                        <li>„Ich kann meine Leistung abrufen.“</li>
+                        <li>„Ich gebe mein Bestes, egal was passiert.“</li>
+                    </ul>
+                    <h3>Setzen von realistischen Zielen</h3>
+                    <p>Das Setzen von Zielen ist ein zentraler Bestandteil der mentalen Vorbereitung. Sie geben dem Spieler
+                        eine klare Orientierung und helfen, sich auf das Wesentliche zu konzentrieren.</p>
+                    <h4>Zielarten:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Zieltyp</th>
+                                <th>Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ergebnisziel</strong></td>
+                                <td>„Ich möchte heute gewinnen.“</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Leistungsziel</strong></td>
+                                <td>„Ich will heute 90 % meiner Pässe an den Mann bringen.“</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prozessziel</strong></td>
+                                <td>„Ich achte auf meine Laufwege und Positionierung.“</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Der Abend vor dem Spiel</h2>
+                    <p>Die Vorbereitung beginnt nicht erst am Spieltag selbst. Was du am Vorabend tust, kann einen
+                        erheblichen Einfluss auf deine mentale und körperliche Verfassung haben.</p>
+                    <h3>Tipps für den Abend vor dem Spiel:</h3>
+                    <ul>
+                        <li><strong>Ruhig und entspannt bleiben:</strong> Vermeide zu viel Stress oder Aufregung.</li>
+                        <li><strong>Genügend Schlaf:</strong> Achte darauf, früh ins Bett zu gehen und 7-9 Stunden zu
+                            schlafen.</li>
+                        <li><strong>Ernährung:</strong> Leichte, kohlenhydratreiche Mahlzeiten am Vorabend geben dir
+                            Energie.</li>
+                        <li><strong>Ablenkung:</strong> Schalte mental ab, indem du z. B. einen Film schaust oder Musik
+                            hörst.</li>
+                    </ul>
+                    <h2>Am Spieltag</h2>
+                    <p>Am Spieltag selbst gilt es, die mentalen Vorbereitungen umzusetzen und sich nicht von Nervosität aus
+                        der Ruhe bringen zu lassen.</p>
+                    <h3>To-Do-Liste für den Spieltag:</h3>
+                    <ul>
+                        <li><strong>Routinen beibehalten:</strong> Nutze deine bewährten Rituale, um dich auf das Spiel
+                            einzustimmen.</li>
+                        <li><strong>Visualisieren:</strong> Denke kurz vor dem Spiel an deine Visualisierungsübungen und
+                            spiele Szenen im Kopf durch.</li>
+                        <li><strong>Positiv bleiben:</strong> Fokussiere dich auf deine Stärken und was du gut kannst.</li>
+                        <li><strong>Atmung nutzen:</strong> Falls du vor dem Spiel nervös wirst, setze die Atemübungen ein,
+                            um Ruhe zu bewahren.</li>
+                    </ul>
+                    <h2>Umgang mit Nervosität und Rückschlägen</h2>
+                    <p>Auch bei bester Vorbereitung kann Nervosität auftreten oder es läuft nicht alles nach Plan. Wichtig
+                        ist, dass Nachwuchsfußballer lernen, mit diesen Situationen umzugehen.</p>
+                    <h3>Tipps zum Umgang mit Nervosität:</h3>
+                    <ul>
+                        <li><strong>Akzeptanz:</strong> Es ist normal, vor wichtigen Spielen nervös zu sein. Akzeptiere die
+                            Nervosität und versuche, sie in Energie umzuwandeln.</li>
+                        <li><strong>Atmen:</strong> Nutze die Atemtechniken, um dich zu beruhigen.</li>
+                        <li><strong>Kurze Fokuspunkte setzen:</strong> Konzentriere dich auf eine konkrete Handlung, wie den
+                            nächsten Pass oder den nächsten Laufweg, anstatt das ganze Spiel im Kopf zu durchdenken.</li>
+                    </ul>
+                    <h3>Umgang mit Rückschlägen während des Spiels:</h3>
+                    <ul>
+                        <li><strong>Positiv bleiben:</strong> Ein verlorener Zweikampf oder ein Fehler bedeutet nicht, dass
+                            das ganze Spiel schlecht läuft. Bleibe fokussiert und arbeite weiter.</li>
+                        <li><strong>Teambesprechung:</strong> Nutze Pausen oder kurze Spielunterbrechungen, um mit deinen
+                            Mitspielern zu sprechen und Lösungen zu finden.</li>
+                    </ul>
+                    <h2>Fazit</h2>
+                    <p>Die mentale Vorbereitung ist für Nachwuchsfußballer ein entscheidender Faktor, um ihre Bestleistung
+                        im Spiel abrufen zu können. Techniken wie Visualisierung, Atemübungen und positive Selbstgespräche
+                        helfen
+                        dabei, den Fokus zu behalten, Stress abzubauen und mit Rückschlägen umzugehen. Durch regelmäßiges
+                        Üben dieser mentalen Fähigkeiten können junge Fußballer nicht nur auf dem Spielfeld, sondern auch in
+                        anderen
+                        Lebensbereichen von einer stärkeren mentalen Resilienz profitieren.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <p>Die mentale Vorbereitung ist für den Erfolg im Fußball genauso wichtig wie das körperliche Training.
-                    Nachwuchsfußballer stehen oft unter besonderem Druck, sowohl von sich selbst als auch von Außen. Um
-                    bei Spielen
-                    die beste Leistung abrufen zu können, ist eine gezielte mentale Vorbereitung entscheidend. In diesem
-                    Beitrag werde ich euch verschiedene Techniken und Strategien zeigen, wie sich junge Spieler
-                    mental auf
-                    Wettkämpfe vorbereiten können.</p>
-                <h2>Warum ist mentale Vorbereitung so wichtig?</h2>
-                <p>Die mentale Stärke beeinflusst nicht nur die Leistung auf dem Spielfeld, sondern auch das
-                    Wohlbefinden des Spielers. Wer mental gut vorbereitet ist, geht selbstbewusster ins Spiel und kann
-                    auch in schwierigen
-                    Situationen einen kühlen Kopf bewahren. Oft entscheiden mentale Faktoren über Sieg oder Niederlage,
-                    denn wie du auf Rückschläge oder Stress reagierst, ist ein Schlüssel zum Erfolg.</p>
-                <h3>Vorteile der mentalen Vorbereitung:</h3>
-                <ul>
-                    <li><strong>Selbstbewusstsein:</strong> Mehr Vertrauen in die eigenen Fähigkeiten.</li>
-                    <li><strong>Stressbewältigung:</strong> Besserer Umgang mit Drucksituationen.</li>
-                    <li><strong>Fokus:</strong> Bessere Konzentration auf die Aufgaben im Spiel.</li>
-                    <li><strong>Motivation:</strong> Stärkere innere Antriebskraft, auch in schwierigen Phasen.</li>
-                </ul>
-                <h2>Techniken der mentalen Vorbereitung</h2>
-                <p>Die mentale Vorbereitung kann auf verschiedene Weisen erfolgen. Hier sind einige bewährte Techniken,
-                    die Nachwuchsfußballern helfen können, sich mental auf Spiele einzustellen.</p>
-                <h3>Visualisierung</h3>
-                <p>Visualisierung ist eine Technik, bei der der Spieler sich bereits vor dem Spiel den Ablauf und seine
-                    eigenen Handlungen vorstellt. Diese mentale Vorwegnahme von Spielsituationen hilft dabei,
-                    Selbstbewusstsein zu
-                    stärken und die Ausführung bestimmter Aktionen zu verbessern.</p>
-                <h4>Wie funktioniert Visualisierung?</h4>
-                <ul>
-                    <li>Nimm dir 10-15 Minuten Zeit in einer ruhigen Umgebung.</li>
-                    <li>Stelle dir detailliert vor, wie du im Spiel agierst: z. B. Pässe spielst, Tore schießt oder
-                        defensiv verteidigst.</li>
-                    <li>Versuche, alle Sinne mit einzubeziehen: Wie fühlt sich der Ball an? Was hörst du auf dem Platz?
-                        Wie sieht das Spielfeld aus?</li>
-                </ul>
-                <h3>Atemtechniken</h3>
-                <p>Atemübungen können helfen, sich zu entspannen und den Stress zu reduzieren. Eine bewusste, tiefe
-                    Atmung kann die Nervosität vor einem Spiel lindern und für mehr Gelassenheit sorgen.</p>
-                <h4>Beispiel einer Atemtechnik:</h4>
-                <ol>
-                    <li>Atme tief durch die Nase ein (4 Sekunden).</li>
-                    <li>Halte den Atem für 4 Sekunden an.</li>
-                    <li>Atme langsam durch den Mund aus (6 Sekunden).</li>
-                    <li>Wiederhole dies für 5-10 Minuten, bis du ruhiger wirst.</li>
-                </ol>
-                <h3>Positive Selbstgespräche</h3>
-                <p>Innere Monologe haben einen großen Einfluss auf die mentale Stärke. Negative Gedanken können
-                    Unsicherheit und Angst verstärken, während positive Selbstgespräche die Zuversicht fördern.</p>
-                <h4>Beispiele für positive Affirmationen:</h4>
-                <ul>
-                    <li>„Ich bin gut vorbereitet.“</li>
-                    <li>„Ich kann meine Leistung abrufen.“</li>
-                    <li>„Ich gebe mein Bestes, egal was passiert.“</li>
-                </ul>
-                <h3>Setzen von realistischen Zielen</h3>
-                <p>Das Setzen von Zielen ist ein zentraler Bestandteil der mentalen Vorbereitung. Sie geben dem Spieler
-                    eine klare Orientierung und helfen, sich auf das Wesentliche zu konzentrieren.</p>
-                <h4>Zielarten:</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Zieltyp</th>
-                            <th>Beispiel</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Ergebnisziel</strong></td>
-                            <td>„Ich möchte heute gewinnen.“</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Leistungsziel</strong></td>
-                            <td>„Ich will heute 90 % meiner Pässe an den Mann bringen.“</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Prozessziel</strong></td>
-                            <td>„Ich achte auf meine Laufwege und Positionierung.“</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2>Der Abend vor dem Spiel</h2>
-                <p>Die Vorbereitung beginnt nicht erst am Spieltag selbst. Was du am Vorabend tust, kann einen
-                    erheblichen Einfluss auf deine mentale und körperliche Verfassung haben.</p>
-                <h3>Tipps für den Abend vor dem Spiel:</h3>
-                <ul>
-                    <li><strong>Ruhig und entspannt bleiben:</strong> Vermeide zu viel Stress oder Aufregung.</li>
-                    <li><strong>Genügend Schlaf:</strong> Achte darauf, früh ins Bett zu gehen und 7-9 Stunden zu
-                        schlafen.</li>
-                    <li><strong>Ernährung:</strong> Leichte, kohlenhydratreiche Mahlzeiten am Vorabend geben dir
-                        Energie.</li>
-                    <li><strong>Ablenkung:</strong> Schalte mental ab, indem du z. B. einen Film schaust oder Musik
-                        hörst.</li>
-                </ul>
-                <h2>Am Spieltag</h2>
-                <p>Am Spieltag selbst gilt es, die mentalen Vorbereitungen umzusetzen und sich nicht von Nervosität aus
-                    der Ruhe bringen zu lassen.</p>
-                <h3>To-Do-Liste für den Spieltag:</h3>
-                <ul>
-                    <li><strong>Routinen beibehalten:</strong> Nutze deine bewährten Rituale, um dich auf das Spiel
-                        einzustimmen.</li>
-                    <li><strong>Visualisieren:</strong> Denke kurz vor dem Spiel an deine Visualisierungsübungen und
-                        spiele Szenen im Kopf durch.</li>
-                    <li><strong>Positiv bleiben:</strong> Fokussiere dich auf deine Stärken und was du gut kannst.</li>
-                    <li><strong>Atmung nutzen:</strong> Falls du vor dem Spiel nervös wirst, setze die Atemübungen ein,
-                        um Ruhe zu bewahren.</li>
-                </ul>
-                <h2>Umgang mit Nervosität und Rückschlägen</h2>
-                <p>Auch bei bester Vorbereitung kann Nervosität auftreten oder es läuft nicht alles nach Plan. Wichtig
-                    ist, dass Nachwuchsfußballer lernen, mit diesen Situationen umzugehen.</p>
-                <h3>Tipps zum Umgang mit Nervosität:</h3>
-                <ul>
-                    <li><strong>Akzeptanz:</strong> Es ist normal, vor wichtigen Spielen nervös zu sein. Akzeptiere die
-                        Nervosität und versuche, sie in Energie umzuwandeln.</li>
-                    <li><strong>Atmen:</strong> Nutze die Atemtechniken, um dich zu beruhigen.</li>
-                    <li><strong>Kurze Fokuspunkte setzen:</strong> Konzentriere dich auf eine konkrete Handlung, wie den
-                        nächsten Pass oder den nächsten Laufweg, anstatt das ganze Spiel im Kopf zu durchdenken.</li>
-                </ul>
-                <h3>Umgang mit Rückschlägen während des Spiels:</h3>
-                <ul>
-                    <li><strong>Positiv bleiben:</strong> Ein verlorener Zweikampf oder ein Fehler bedeutet nicht, dass
-                        das ganze Spiel schlecht läuft. Bleibe fokussiert und arbeite weiter.</li>
-                    <li><strong>Teambesprechung:</strong> Nutze Pausen oder kurze Spielunterbrechungen, um mit deinen
-                        Mitspielern zu sprechen und Lösungen zu finden.</li>
-                </ul>
-                <h2>Fazit</h2>
-                <p>Die mentale Vorbereitung ist für Nachwuchsfußballer ein entscheidender Faktor, um ihre Bestleistung
-                    im Spiel abrufen zu können. Techniken wie Visualisierung, Atemübungen und positive Selbstgespräche
-                    helfen
-                    dabei, den Fokus zu behalten, Stress abzubauen und mit Rückschlägen umzugehen. Durch regelmäßiges
-                    Üben dieser mentalen Fähigkeiten können junge Fußballer nicht nur auf dem Spielfeld, sondern auch in
-                    anderen
-                    Lebensbereichen von einer stärkeren mentalen Resilienz profitieren.</p>
-            </div>
-        </div>
-    </div>
+
+    </main>
 
     <!--FOOTER-->
 
@@ -219,7 +227,8 @@
             <div class="row">
                 <div class="col-6">
                     <span>ELEVATE YOUR GAME von Niklas Franke (2024)</span>
-                    <nav id="footer-nav">
+                    <!-- aria-label der Footer-Navigation sprachlich vereinfacht und präzisiert -->
+                    <nav id="footer-nav" aria-label="Fußnavigation">
                     <a href="impressum.html">Impressum</a>
                     </nav>
                 </div>
