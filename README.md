@@ -6,6 +6,7 @@ Beispiele aus dem Code:
 - Semantische Navigation mit `<nav id="header-nav" aria-label="Hauptnavigation">` und ARIA-Attributen wie `aria-expanded="false"` und `aria-controls="mobile-nav-content"` für Tastaturbedienbarkeit.
 - Skip-Links wie `<a class="skip-link" href="#content">Zum Inhalt springen</a>` für Screenreader-Nutzer.
 - Fokus-Stile in `css/styles.css`, z. B. `a:focus, button:focus { outline: 2px solid #007bff; }`, zur Verbesserung der Tastatur-Navigation.
+- Anpassungen zur Kontrasterhöhung in `css/styles.css`, z. B. `--color-green: #4F7F13;`
 
 Die Optimierung auf Barrierefreiheit ist sinnvoll, da sie die Website für Menschen mit Behinderungen zugänglich macht und die Benutzererfahrung für alle verbessert.
 
