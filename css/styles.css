@@ -5,7 +5,7 @@
 
 --color-gray-dark: #3D3F45;  
 --color-gray-light: #E5E5E5;
---color-green: #70A91F;
+--color-green: #4F7F13; /* Geändert um den Kontast zu erhöhen */
 }
 
 html {
@@ -255,17 +255,13 @@ body {
     background-size: contain; /* Inhalt im kompletten Bereich */
 }
 
-/* === HEADER-BANNER === */ 
-
 .header-banner-ernaehrung {
   background: url("../img/healthy-5506822.jpg") no-repeat; /* nicht wiederholen */
   width: 100%; /* immer volle Breite */
   height: 0;  /* weil Höhe über padding-top eingestellt wird */
   padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
   background-size: contain; /* Inhalt im kompletten Bereich */
-}
-
-/* === HEADER-BANNER === */ 
+} 
 
 .header-banner-regeneration {
   background: url("../img/spa-8598061.jpg") no-repeat; /* nicht wiederholen */
@@ -275,8 +271,6 @@ body {
   background-size: contain; /* Inhalt im kompletten Bereich */
 }
 
-/* === HEADER-BANNER === */ 
-
 .header-banner-vorbereitung {
   background: url("../img/city-1868530.jpg") no-repeat; /* nicht wiederholen */
   width: 100%; /* immer volle Breite */
@@ -284,8 +278,6 @@ body {
   padding-top: 34.33%; /* Seitenverhältnis vom Bild ( Höhe / Breite * 100 ) */
   background-size: contain; /* Inhalt im kompletten Bereich */
 }
-
-/* === HEADER-BANNER === */ 
 
 .header-banner-praevention {
   background: url("../img/football-1319608.jpg") no-repeat; /* nicht wiederholen */
@@ -319,7 +311,7 @@ body {
   margin-left: auto;
 }
 
-.info-box > h2 {
+.info-box h2 {
   font-size: 1.4rem;
 }
 
@@ -348,7 +340,7 @@ body {
 }
 
 .info-weiterlesen-btn:hover {
-  color: var(--color-green);
+  color: #fff; /* von grau auf weiß geändert, um den Kontrast zu erhöhen */
   font-weight: bold;
   border: 2px solid var(--color-green);
 }
