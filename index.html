@@ -21,60 +21,61 @@
     <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
     <!--NAVIGATIONSLEISTE-->
+    <header> <!--eingefügt für Barrierefreiheit-->
+        <nav id="header-nav" aria-label="Hauptnavigation">
 
-    <nav id="header-nav" aria-label="Hauptnavigation">
+            <!-- DESKTOP-NAVIGATION -->
 
-        <!-- DESKTOP-NAVIGATION -->
-
-        <div class="container" id="desktop-nav">
-            <div class="row">
-                <div class="col-6">
-                    <a href="index.html" class="logo-link">
-                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
-                        <img src="img/logo.png" alt="Elevate your Game">
-                    </a>
-                    <ul>
-                        <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
-                        <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a></li>
-                        <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
-                        <li><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></li>
-                        <li><a href="pages/regeneration.html">Regeneration</a></li>
-                        <li><a href="pages/impressum.html">Impressum</a></li>
-                    </ul>
+            <div class="container" id="desktop-nav">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html" class="logo-link">
+                            <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                            <img src="img/logo.png" alt="Elevate your Game">
+                        </a>
+                        <ul>
+                            <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
+                            <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a></li>
+                            <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
+                            <li><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></li>
+                            <li><a href="pages/regeneration.html">Regeneration</a></li>
+                            <li><a href="pages/impressum.html">Impressum</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- MOBILE-NAVIGATION -->
+            <!-- MOBILE-NAVIGATION -->
 
-        <div class="container" id="mobile-nav">
-            <div class="row">
-                <div class="col-6">
-                    <a href="index.html" class="logo-link">
-                        <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
-                        <img src="img/logo.png" alt="Elevate your Game">
-                    </a>
-                    <div class="clearfix" id="mobile-nav-dropdown">
-                        <!-- Mobile Navigation als echtes <button>-Element umgesetzt, damit sie per Tastatur und Screenreader bedienbar ist -->
-                        <button id="mobile-nav-button" type="button" aria-expanded="false" aria-controls="mobile-nav-content" aria-label="Menü öffnen">
-                            <span aria-hidden="true">&equiv;</span>
-                        </button>
-                        <div class="clearfix" id="mobile-nav-content">
-                            <ul>
-                                <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
-                                <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a>
-                                </li>
-                                <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
-                                <li><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></li>
-                                <li><a href="pages/regeneration.html">Regeneration</a></li>
-                                <li><a href="pages/impressum.html">Impressum</a></li>
-                            </ul>
+            <div class="container" id="mobile-nav">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html" class="logo-link">
+                            <!-- Alt-Text des Logos gekürzt, damit Screenreader den Seitennamen klarer und natürlicher vorlesen -->
+                            <img src="img/logo.png" alt="Elevate your Game">
+                        </a>
+                        <div class="clearfix" id="mobile-nav-dropdown">
+                            <!-- Mobile Navigation als echtes <button>-Element umgesetzt, damit sie per Tastatur und Screenreader bedienbar ist -->
+                            <button id="mobile-nav-button" type="button" aria-expanded="false" aria-controls="mobile-nav-content" aria-label="Menü öffnen">
+                                <span aria-hidden="true">&equiv;</span>
+                            </button>
+                            <div class="clearfix" id="mobile-nav-content">
+                                <ul>
+                                    <li class="active"><a href="index.html" aria-current="page">Startseite</a></li>
+                                    <li><a href="pages/trainings-ernaehrungstipps.html">Trainings- und Ernährungstipps</a>
+                                    </li>
+                                    <li><a href="pages/verletzungspraevention.html">Verletzungsprävention</a></li>
+                                    <li><a href="pages/mentale-vorbereitung.html">Mentale Vorbereitung</a></li>
+                                    <li><a href="pages/regeneration.html">Regeneration</a></li>
+                                    <li><a href="pages/impressum.html">Impressum</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main id="content">
         <!--HEADER-BANNER-->
